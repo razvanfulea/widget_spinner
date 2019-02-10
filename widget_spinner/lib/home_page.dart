@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widget_spinner/todo/todo_page.dart';
 import 'package:widget_spinner/utils/StringUtils.dart';
 import 'lib_all.dart';
 
@@ -27,6 +28,17 @@ class _HomePageState extends State<HomePage>{
       appBar: AppBar(
         title: Text("Widget Spinner"),
         centerTitle: true,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.assignment),
+            onPressed: (){
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => TodoPage())
+              );
+            },
+          ),
+        ],
       ),
       body: GestureDetector(
         onTap: (){

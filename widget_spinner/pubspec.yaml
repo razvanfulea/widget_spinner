@@ -15,6 +15,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  # Database
+  sqflite: ^1.1.0
+  # For directory path
+  path_provider: ^0.5.0+1
+  # For DateTime
+  intl: ^0.15.7
+  # For Toast
+  fluttertoast: ^2.2.11
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
